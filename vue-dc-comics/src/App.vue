@@ -4,9 +4,8 @@
     <Header />
     <Content />
     <Footer />
-    <!-- 
-    <SubFooter /> -->
-   
+    <SubFooter /> 
+    <Cards />
   </div>
 </template>
 
@@ -14,14 +13,17 @@
 import Header from './components/Header.vue'
 import Content from './components/Content.vue'
 import Footer from './components/Footer.vue'
-// import SubFooter from './components/SubFooter.vue'
+import SubFooter from './components/SubFooter.vue'
+import Cards from './components/Cards.vue'
 
 
 export default {
   components: {
     Header,
     Content,
-    Footer
+    Footer,
+    SubFooter,
+    Cards,
   }
 }
 </script>
