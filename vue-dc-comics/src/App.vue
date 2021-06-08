@@ -2,24 +2,41 @@
 <template>
   <div>
     <Header />
+    <Content />
+    <Footer />
+    <!-- 
+    <SubFooter /> -->
+   
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Content from './components/Content.vue'
+import Footer from './components/Footer.vue'
+// import SubFooter from './components/SubFooter.vue'
+
 
 export default {
   components: {
-    Header
+    Header,
+    Content,
+    Footer
   }
 }
 </script>
 
 <style lang="scss">
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
 </style>
