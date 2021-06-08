@@ -1,9 +1,9 @@
 <template>
   <div class="content_central">
       <div class="container">
-          <div class="card" v-for="card,index in cards" :img="card.thumb" :series="card.series" :key="index">
-              test
-          </div>
+          <slide class="card" v-for="card,index in cards" :img="card.thumb" :series="card.series" :key="index">
+              <img :src="card.thumb" alt="">
+          </slide>
       </div>
   </div>
 </template>
