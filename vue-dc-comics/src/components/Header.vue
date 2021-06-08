@@ -1,13 +1,15 @@
 <template>
 <div>
     <div class="container">
-        <img src="../assets/dc-logo.png" alt="Logo DC">
+        <div class="header">
+            <img src="../assets/dc-logo.png" alt="Logo DC">
 
-            <ul>
-                <li v-for="link,index in links" :key="index">
-                    <a :href="link">{{link.text}}</a>
-                </li>
-            </ul>
+                <ul>
+                    <li v-for="link,index in links" :key="index">
+                        <a class="link_header" :href="link">{{link.text}}</a>
+                    </li>
+                </ul>
+        </div>       
     </div>
 </div>
 </template>
@@ -65,24 +67,28 @@ export default {
 </script>
 
 <style lang="scss"> 
+    .header{
+        margin-bottom: 50px;
+    }
     img {
         width: 75px;
         margin-top: 20px;
+        float: left;
+        margin-right: 20px;
         // margin-left: 300px;
     } 
     li{
         display: inline-block;
-        float: right;
         margin-top: 50px;
         margin-right: 60px;
     }
-    a{
-        padding: 15px;
+    .link_header{
         text-decoration: none;
         text-transform: uppercase;
         color: #303030;
         font-family: 'Roboto', sans-serif;
-
+        font-size: 12px;
+        padding-bottom: 50px;
         &:hover{
             color: #0282F9;
             text-decoration: underline;
