@@ -3,9 +3,9 @@
   <div>
     <Header />
     <Content />
+    <Cards />
     <Footer />
     <SubFooter /> 
-    <Cards />
   </div>
 </template>
 
@@ -21,9 +21,9 @@ export default {
   components: {
     Header,
     Content,
+    Cards,
     Footer,
     SubFooter,
-    Cards,
   }
 }
 </script>

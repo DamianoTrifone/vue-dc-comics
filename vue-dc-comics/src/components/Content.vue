@@ -1,7 +1,6 @@
 <template>
     <div class="content">
         <div class="container">
-            <h1 > Content goes here </h1>
         </div>
     </div>
 </template>
@@ -18,5 +17,6 @@ export default {
         color: white;
         background-color: black;
         height: 400px;
+        background-image: url( ../assets/jumbotron.jpg);
     }
 </style>
