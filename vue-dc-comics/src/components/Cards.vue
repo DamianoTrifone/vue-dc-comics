@@ -2,7 +2,8 @@
   <div class="content_central">
       <div class="container">
           <slide class="card" v-for="card,index in cards" :img="card.thumb" :series="card.series" :key="index">
-              <img :src="card.thumb" alt="">
+              <img class="copertina" :src="card.thumb" :alt="card.series">
+              
           </slide>
       </div>
   </div>
@@ -93,5 +94,11 @@ export default {
 </script>
 
 <style>
-
+    .content_central{
+        height: 380px;
+        background-color: #1C1C1C;
+    }
+    .copertina{
+        width: 108px;
+    }
 </style>

@@ -61,6 +61,7 @@ export default {
         color: white;
         text-transform: uppercase;
         padding: 8px 0px;
+        margin-left: 20px;
     }
     .link_footer{
         color: lightslategray;
